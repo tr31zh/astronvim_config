@@ -22,9 +22,25 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    -- Tabs
     ["<tab>"] = {
       function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
       desc = "Next buffer",
+    },
+    -- Spectre
+    ["<leader>so"] = { "<cmd>lua require('spectre').open()<CR>", desc = "[S]pectre [O]pen" },
+    ["<leader>sw"] = {
+      "<cmd>lua require('spectre').open_visual({select_word=true})<CR>",
+      desc = "[S]pectre search [W]ord",
+    },
+    -- Telescope Plugins
+    ["<leader>Tf"] = {
+      "<Cmd>lua require('telescope').extensions.frecency.frecency({ workspace = 'CWD' })<CR>",
+      desc = "[T]elescope [F]requency",
+    },
+    ["<leader>Tb"] = {
+      ":Telescope file_browser path=%:p:h select_buffer=true<CR>",
+      desc = "[T]elescope file [B]rowser",
     },
   },
   t = {
