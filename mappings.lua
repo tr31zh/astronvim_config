@@ -28,20 +28,30 @@ return {
       desc = "Next buffer",
     },
     -- Spectre
-    ["<leader>so"] = { "<cmd>lua require('spectre').open()<CR>", desc = "[S]pectre [O]pen" },
+    ["<leader>s"] = { desc = "Spectre" },
+    ["<leader>so"] = { "<cmd>lua require('spectre').open()<CR>", desc = "[s]pectre [o]pen" },
     ["<leader>sw"] = {
       "<cmd>lua require('spectre').open_visual({select_word=true})<CR>",
-      desc = "[S]pectre search [W]ord",
+      desc = "[s]pectre search [w]ord",
     },
     -- Telescope Plugins
+    ["<leader>T"] = { desc = "Telescope plugins" },
     ["<leader>Tf"] = {
       "<Cmd>lua require('telescope').extensions.frecency.frecency({ workspace = 'CWD' })<CR>",
-      desc = "[T]elescope [F]requency",
+      desc = "[T]elescope [f]requency",
     },
     ["<leader>Tb"] = {
       ":Telescope file_browser path=%:p:h select_buffer=true<CR>",
-      desc = "[T]elescope file [B]rowser",
+      desc = "[T]elescope file [b]rowser",
     },
+    -- VimTeX
+    ["<leader>v"] = { desc = "VimTeX" },
+    ["<leader>vi"] = { "<cmd> VimtexInfo <CR>", desc = "[v]imTex Get file [i]nfo" },
+    ["<leader>vt"] = { "<cmd> VimtexTocToggle <CR>", desc = "[v]imTex [t]oc toggle" },
+    ["<leader>vc"] = { "<cmd> VimtexCompile <CR>", desc = "[v]imTex [c]ompile" },
+    ["<leader>vs"] = { "<cmd> VimtexStop <CR>", desc = "[v]imTex [s]top compile" },
+    ["<leader>vl"] = { "<cmd> VimtexClean <CR>", desc = "[v]imTex c[l]ean" },
+    -- ["<leader>v"] = { "<cmd> <CR>", desc = "[v]imTex " },
   },
   t = {
     -- setting a mapping to false will disable it
