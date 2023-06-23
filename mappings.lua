@@ -44,6 +44,7 @@ return {
       ":Telescope file_browser path=%:p:h select_buffer=true<CR>",
       desc = "[T]elescope file [b]rowser",
     },
+    ["<leader>Tm"] = { ":Telescope mapper<CR>", desc = "[T]elescope [m]apper" },
     -- VimTeX
     ["<leader>v"] = { desc = "VimTeX" },
     ["<leader>vi"] = { "<cmd> VimtexInfo <CR>", desc = "[v]imTex Get file [i]nfo" },
@@ -52,6 +53,11 @@ return {
     ["<leader>vs"] = { "<cmd> VimtexStop <CR>", desc = "[v]imTex [s]top compile" },
     ["<leader>vl"] = { "<cmd> VimtexClean <CR>", desc = "[v]imTex c[l]ean" },
     -- ["<leader>v"] = { "<cmd> <CR>", desc = "[v]imTex " },
+    -- Neo Tree
+    ["<leader>N"] = { desc = "[N]eo tree" },
+    ["<leader>Ng"] = { "<cmd> Neotree git_status<CR>", desc = "[N]eotree [g]it status" },
+    ["<leader>Nb"] = { "<cmd> Neotree buffers<CR>", desc = "[N]eotree [b]uffers" },
+    ["<leader>Nf"] = { "<cmd> Neotree filesystem<CR>", desc = "[N]eotree [f]ile system" },
   },
   t = {
     -- setting a mapping to false will disable it
