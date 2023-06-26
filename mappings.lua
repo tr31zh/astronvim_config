@@ -58,6 +58,8 @@ return {
     ["<leader>Ng"] = { "<cmd> Neotree git_status<CR>", desc = "[N]eotree [g]it status" },
     ["<leader>Nb"] = { "<cmd> Neotree buffers<CR>", desc = "[N]eotree [b]uffers" },
     ["<leader>Nf"] = { "<cmd> Neotree filesystem<CR>", desc = "[N]eotree [f]ile system" },
+    -- LazyGit
+    ["<leader>gz"] = { "<cmd> LazyGit <CR>", desc = "[g]it La[z]yGit" },
   },
   t = {
     -- setting a mapping to false will disable it

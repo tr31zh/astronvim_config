@@ -15,6 +15,10 @@ return {
         "texlab",
         -- Typescript
         "tsserver",
+        -- HTML
+        "html",
+        -- Haskell
+        "hls",
       })
     end,
   },
@@ -37,6 +41,8 @@ return {
         -- Typescript
         "eslint_d",
         "prettier",
+        -- Haskell
+        "fourmolu",
       })
     end,
   },
@@ -51,6 +57,8 @@ return {
         -- Typescript
         "firefox",
         "chrome",
+        -- Haskell
+        "haskell",
       })
     end,
   },
